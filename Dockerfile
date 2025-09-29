@@ -16,4 +16,6 @@ RUN apk update --no-cache \
     
 COPY . /code/
 
+RUN alembic updage head
+
 # CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8093"]
